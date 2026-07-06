@@ -4,6 +4,9 @@
 
 ### Added
 
+- Added emitting a CycloneDX dependency graph spanning runtime dependencies,
+  vendored language-level SBOMs' graphs, and optionally build-time dependencies
+  via the `includeBuildtimeDependencies` flag.
 - Added a `bsi:component:executable` property to each component, following the
   BSI TR-03183-2 taxonomy. A component whose derivation sets `meta.mainProgram`
   is marked `executable`, every other store path `non-executable`.
