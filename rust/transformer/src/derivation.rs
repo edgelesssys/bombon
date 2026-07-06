@@ -54,6 +54,8 @@ pub struct Meta {
     pub homepage: Option<String>,
     pub description: Option<String>,
     pub identifiers: Option<Identifiers>,
+    #[serde(rename = "mainProgram")]
+    pub main_program: Option<String>,
 }
 
 #[derive(Deserialize, Clone, Debug, Default)]
